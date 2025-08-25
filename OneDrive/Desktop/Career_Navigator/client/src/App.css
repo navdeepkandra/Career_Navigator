@@ -347,3 +347,33 @@ button:disabled {
     background-position: 0% 50%;
   }
 }
+
+/* --- 7. Responsive Design (for Mobile & Tablets) --- */
+@media (max-width: 768px) {
+  body {
+    padding: 12px; /* Reduce overall padding on small screens */
+  }
+
+  .App-header {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem; /* Make the main title smaller */
+    margin-bottom: 2rem;
+  }
+
+  .ToolContainer,
+  .ResultsContainer,
+  .ResultSection,
+  .ChartContainer,
+  .AuthForm {
+    padding: 1rem; /* Reduce padding inside cards */
+  }
+
+  .Results {
+    /* This is the key change: stack the results into a single column */
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
