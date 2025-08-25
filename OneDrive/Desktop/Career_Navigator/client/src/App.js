@@ -90,11 +90,26 @@ function App() {
   };
   const chartOptions = {
     responsive: true,
-    plugins: { legend: { labels: { color: 'var(--text-main)' } } },
+    plugins: { legend: { labels: { color: '#E5E7EB' } } },
     scales: {
-      y: { ticks: { color: 'var(--text-secondary)', stepSize: 1 } },
-      x: { ticks: { color: 'var(--text-secondary)' } }
+    y: {
+      ticks: {
+        color: '#9CA3AF', // Sets Y-axis numbers to light grey
+        stepSize: 1
+      },
+      grid: {
+        color: '#374151' // Sets Y-axis grid lines to a subtle dark grey
+      }
+    },
+    x: {
+      ticks: {
+        color: '#9CA3AF' // Sets X-axis labels (e.g., "Skills") to light grey
+      },
+      grid: {
+        color: '#374151' // Sets X-axis grid lines to a subtle dark grey
+      }
     }
+  }
   };
 
   // Render a loading screen while checking for a user
