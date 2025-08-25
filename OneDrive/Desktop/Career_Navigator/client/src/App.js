@@ -46,7 +46,7 @@ function App() {
     setError('');
     setResults(null);
     try {
-      const response = await axios.post('https://career-navigator-api.onrender.com', {
+      const response = await axios.post('https://career-navigator-api.onrender.com/api/analyze', {
         jobRole: jobQuery,
         userText: userText
       });
