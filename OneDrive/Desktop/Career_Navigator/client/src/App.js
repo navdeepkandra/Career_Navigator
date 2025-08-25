@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Footer from './Footer.js';
 import './App.css';
 
 // --- Firebase Imports ---
@@ -192,6 +193,8 @@ function App() {
           </div>
         )}
       </header>
+
+      <Footer />
     </div>
   );
 }
